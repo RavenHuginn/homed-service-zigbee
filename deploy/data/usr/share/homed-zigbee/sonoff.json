@@ -50,7 +50,15 @@
       "reportings":     ["batteryPercentage"],
       "exposes":        ["battery", "action"],
       "options":        {"customCommands": {"action": {"clusterId": 6}}, "action": {"enum": ["hold", "doubleClick", "singleClick"]}}
-    }
+    },
+    {
+      "description":    "eWeLink/CK-BL702-AL-01(7009_Z102LG03-1)",
+      "modelNames":     ["CK-BL702-AL-01(7009_Z102LG03-1)"],
+      "properties":     ["status", "level", "colorXY", "colorTemperature"],
+      "actions":        ["status", "level", "colorXY", "colorTemperature"],
+      "exposes":        ["light"],
+      "options":        {"light": ["level", "color", "colorTemperature"], "colorTemperature": {"min": 142, "max": 500}, "powerSource": 1}
+    }	
   ],
 
   "SONOFF":
